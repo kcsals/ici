@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0a0a;
+  --fg: #ffffff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #111827;
+  background: #ffffff;
+}
+
+.container-max {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-md bg-brand-blue px-4 py-2 text-white shadow hover:opacity-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-md border border-brand-blue px-4 py-2 text-brand-blue hover:bg-brand-blue/10;
+}
+
+/* Global link treatment for blue/silver theme */
+a {
+  @apply text-brand-blue underline-offset-2 decoration-brand-blue/30 hover:underline hover:decoration-brand-silver/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue/40 rounded-sm;
+}
+
+/* Reusable card surface */
+.card {
+  @apply rounded-lg border border-brand-silver/40 bg-white/80 shadow-sm hover:shadow transition;
+}
+
+/* Subtle divider */
+hr {
+  @apply border-brand-silver/40 my-8;
+}
