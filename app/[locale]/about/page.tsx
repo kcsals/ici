@@ -87,7 +87,9 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
       <section>
         <div className="rounded-lg border border-brand-silver/40 p-6 bg-gradient-to-r from-brand-blue/5 to-brand-silver/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
-            <h3 className="text-lg font-semibold text-brand-blue">{t.home.ctaBanner.title}</h3>
+            <h3 className="text-lg font-semibold text-brand-blue">
+              {t.home.ctaBanner.title}
+            </h3>
             <p className="text-gray-700">{t.home.ctaBanner.body}</p>
           </div>
           <Link href={`/${params.locale}/contact`} className="btn-primary">
